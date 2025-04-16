@@ -7,6 +7,8 @@ assignees: ''
 
 ---
 
-**As a **
-**I want **
-**So I can **
+**As a** 
+
+**I want**
+
+**So I can** 
