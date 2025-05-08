@@ -1,5 +1,5 @@
 
-title SURIMI Sequence Diagram
+# SURIMI Sequence Diagram
 ```mermaid
 
  sequenceDiagram
@@ -21,7 +21,7 @@ title SURIMI Sequence Diagram
 
     Controller ->> EwE: init (config)
     EwE ->> Controller: success?
-    Note right of EwE: unless otherwise specified:\nevery gRPC service reports its status after each request!
+    Note over Controller, Poseidon: unless otherwise specified:\nevery gRPC service reports its status after each request!
     Controller ->> Poseidon: init (config)
     Controller ->> CMSY: init (config)
     Controller ->> Market: init (config)
@@ -53,7 +53,7 @@ title SURIMI Sequence Diagram
             Controller ->> EwE: update catches
             Controller ->> CMSY: update catches
             Controller ->> Poseidon: request discards
-            Note right of Poseidon: discards by fleet, location and species
+            Note over Poseidon: discards by fleet, location and species
             Poseidon ->> Controller: discards
             Controller ->> EwE: update discards
             Controller ->> EwE: simulate timestep (1 month)
