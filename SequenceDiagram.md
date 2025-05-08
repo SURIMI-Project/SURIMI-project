@@ -52,7 +52,7 @@
             Controller ->> EwE: update catches
             Controller ->> CMSY: update catches
             Controller ->> Poseidon: request discards
-            Note over Poseidon: discards by fleet, location and species
+            Note over Poseidon: discards by fleet<br/> location and species
             Poseidon ->> Controller: discards
             Controller ->> EwE: update discards
             Controller ->> EwE: simulate timestep (1 month)
