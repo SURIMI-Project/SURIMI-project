@@ -21,7 +21,6 @@
 
     Controller ->> EwE: init (config)
     EwE ->> Controller: success?
-    Note over Controller, Poseidon: unless otherwise specified:\nevery gRPC service reports its status after each request!
     Controller ->> Poseidon: init (config)
     Controller ->> CMSY: init (config)
     Controller ->> Market: init (config)
