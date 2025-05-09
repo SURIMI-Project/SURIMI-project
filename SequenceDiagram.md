@@ -46,7 +46,7 @@
             Controller ->> Poseidon: update biomass
             Controller ->> CMSY: update biomass
             Controller ->> Poseidon: simulate timestep (1 month)
-            Controller ->> Poseidon: request landings
+            Controller ->> Poseidon: request sales
             Controller ->> Poseidon: request catches
             Poseidon ->> Controller: catches
             Controller ->> EwE: update catches
@@ -56,7 +56,7 @@
             Poseidon ->> Controller: discards
             Controller ->> EwE: update discards
             Controller ->> EwE: simulate timestep (1 month)
-            Controller ->> Market: update landings
+            Controller ->> Market: update sales
         end
     end
     Controller ->> CMSY: create stock assessment (final) 
