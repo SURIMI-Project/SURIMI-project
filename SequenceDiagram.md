@@ -26,9 +26,6 @@
     Controller ->> Market: init (config)
     Controller ->> ValueChain: init (config)
 
-    Controller ->> EwE: get historical biomass
-    EwE ->> Controller: historical biomass
-    Controller ->> CMSY: update historical biomass
     Controller ->> CMSY: create stock assessment (initial)
 
     %% Simulation %%
