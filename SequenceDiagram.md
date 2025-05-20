@@ -35,22 +35,33 @@
     loop N years
         loop 12 months
             Controller ->> Market: request prices
-            Market ->> Controller: prices
+            activate Market
+            Market -->> Controller: prices
+            deactivate Market
             Controller ->> EwE: update prices
             Controller ->> Poseidon: update prices
             Controller ->> EwE: request biomass
-            EwE ->> Controller: biomass
+            activate EwE
+            EwE -->> Controller: biomass
+            deactivate EwE
             Controller ->> Poseidon: update biomass
             Controller ->> CMSY: update biomass
             Controller ->> Poseidon: simulate timestep (1 month)
             Controller ->> Poseidon: request sales
+            activate Poseidon
+            Poseidon -->> Controller: sales
+            deactivate Poseidon
             Controller ->> Poseidon: request catches
-            Poseidon ->> Controller: catches
+            activate Poseidon
+            Poseidon -->> Controller: catches
+            deactivate Poseidon
             Controller ->> EwE: update catches
             Controller ->> CMSY: update catches
             Controller ->> Poseidon: request discards
+            activate Poseidon
             Note over Poseidon: discards by fleet<br/> location and species
             Poseidon ->> Controller: discards
+            deactivate Poseidon
             Controller ->> EwE: update discards
             Controller ->> EwE: simulate timestep (1 month)
             Controller ->> Market: update sales
