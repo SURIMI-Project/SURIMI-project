@@ -40,6 +40,7 @@
             deactivate Market
             Controller ->> EwE: update prices
             Controller ->> Poseidon: update prices
+            Controller ->> EwE: simulate timestep (1 month)
             Controller ->> EwE: request biomass
             activate EwE
             EwE -->> Controller: biomass
@@ -63,7 +64,6 @@
             Poseidon ->> Controller: discards
             deactivate Poseidon
             Controller ->> EwE: update discards
-            Controller ->> EwE: simulate timestep (1 month)
             Controller ->> Market: update sales
         end
     end
