@@ -47,21 +47,26 @@
             Controller ->> Poseidon: request catches disposition (intermediate) 
             Poseidon -->> Controller: catches disposition (intermediate)
             Controller ->> EwE: update catches disposition (intermediate)
+
             Controller ->> EwE: request biomass (total)
             EwE -->> Controller: biomass (total)
+            Controller ->> CMSY: update biomass (total)
             Controller ->> EwE: request request catches disposition (total) 
             EwE -->> Controller: catches disposition (total)
-            Controller ->> Poseidon: request sales (intermediate)
-            Poseidon -->> Controller: sales (intermediate)
-            Controller ->> EwE: update sales (intermediate)
-            Controller ->> EwE: request sales (total)
-            EwE -->> Controller: sales (total)
-            Controller ->> CMSY: update biomass (total)
             Controller ->> CMSY: update catches disposition (total)
+
+            Controller ->> EwE: request sales
+            EwE -->> Controller: sales
+            Controller ->> Market: update sales
+            Controller ->> ValueChain: update sales
+
+            Controller ->> Poseidon: request sales
+            Poseidon -->> Controller: sales
+            Controller ->> Market: update sales
+            Controller ->> ValueChain: update sales
+
             Controller ->> CMSY: simulate timestep (total)
-            Controller ->> Market: update sales (total)
             Controller ->> Market: simulate timestep
-            Controller ->> ValueChain: update sales (total)
             Controller ->> ValueChain: simulate timestep
         end
     end
