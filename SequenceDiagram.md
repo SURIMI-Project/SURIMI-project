@@ -35,29 +35,34 @@
     loop N years
         loop 12 months
             Controller ->> Market: request prices
-            activate Market
             Market -->> Controller: prices
-            deactivate Market
             Controller ->> EwE: update prices
             Controller ->> Poseidon: update prices
-            Controller ->> EwE: simulate timestep (1 month)
-            Controller ->> EwE: request biomass_i_mem
-            EwE -->> Controller: biomass_i_mem
-            Controller ->> Poseidon: update biomass_i_mem
-            Controller ->> Poseidon: simulate timestep (1 month)
-            Controller ->> Poseidon: request catches_i_agent
-            Poseidon -->> Controller: catches_i_agent
-            Controller ->> EwE: update catches_i_agent
-            Controller ->> EwE: request catches_t
-            Controller ->> CMSY: update catches_i_Agent
-            Controller ->> ValueChain: update catches_t
-            Controller ->> EwE: request biomass_t
-            Controller ->> Poseidon: request sales
-            Poseidon -->> Controller: sales
-            Controller ->> EwE: request sales
-            Poseidon -->> EwE: sales
-            Controller ->> Market: update total sales (?)
-            Controller ->> ValueChain: update sales
+            Controller ->> ValueChain: update prices
+            Controller ->> EwE: simulate timestep
+            Controller ->> EwE: request biomass (intermediate)
+            EwE -->> Controller: biomass (intermediate)
+            Controller ->> Poseidon: update biomass (intermediate)
+            Controller ->> Poseidon: simulate timestep
+            Controller ->> Poseidon: request catches disposition (intermediate) 
+            Poseidon -->> Controller: catches disposition (intermediate)
+            Controller ->> EwE: update catches disposition (intermediate)
+            Controller ->> EwE: request biomass (total)
+            EwE -->> Controller: biomass (total)
+            Controller ->> EwE: request request catches disposition (total) 
+            EwE -->> Controller: catches disposition (total)
+            Controller ->> Poseidon: request sales (intermediate)
+            Poseidon -->> Controller: sales (intermediate)
+            Controller ->> EwE: update sales (intermediate)
+            Controller ->> EwE: request sales (total)
+            EwE -->> Controller: sales (total)
+            Controller ->> CMSY: update biomass (total)
+            Controller ->> CMSY: update catches disposition (total)
+            Controller ->> CMSY: simulate timestep (total)
+            Controller ->> Market: update sales (total)
+            Controller ->> Market: simulate timestep
+            Controller ->> ValueChain: update sales (total)
+            Controller ->> ValueChain: simulate timestep
         end
     end
     Controller ->> CMSY: create stock assessment (final) 
