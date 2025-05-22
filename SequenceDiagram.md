@@ -41,30 +41,23 @@
             Controller ->> EwE: update prices
             Controller ->> Poseidon: update prices
             Controller ->> EwE: simulate timestep (1 month)
-            Controller ->> EwE: request biomass
-            activate EwE
-            EwE -->> Controller: biomass
-            deactivate EwE
-            Controller ->> Poseidon: update biomass
-            Controller ->> CMSY: update biomass
+            Controller ->> EwE: request biomass_i_mem
+            EwE -->> Controller: biomass_i_mem
+            Controller ->> Poseidon: update biomass_i_mem
             Controller ->> Poseidon: simulate timestep (1 month)
+            Controller ->> Poseidon: request catches_i_agent
+            Poseidon -->> Controller: catches_i_agent
+            Controller ->> EwE: update catches_i_agent
+            Controller ->> EwE: request catches_t
+            Controller ->> CMSY: update catches_i_Agent
+            Controller ->> ValueChain: update catches_t
+            Controller ->> EwE: request biomass_t
             Controller ->> Poseidon: request sales
-            activate Poseidon
             Poseidon -->> Controller: sales
-            deactivate Poseidon
-            Controller ->> Poseidon: request catches
-            activate Poseidon
-            Poseidon -->> Controller: catches
-            deactivate Poseidon
-            Controller ->> EwE: update catches
-            Controller ->> CMSY: update catches
-            Controller ->> Poseidon: request discards
-            activate Poseidon
-            Note over Poseidon: discards by fleet<br/> location and species
-            Poseidon ->> Controller: discards
-            deactivate Poseidon
-            Controller ->> EwE: update discards
-            Controller ->> Market: update sales
+            Controller ->> EwE: request sales
+            Poseidon -->> EwE: sales
+            Controller ->> Market: update total sales (?)
+            Controller ->> ValueChain: update sales
         end
     end
     Controller ->> CMSY: create stock assessment (final) 
