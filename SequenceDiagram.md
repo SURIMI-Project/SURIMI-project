@@ -51,7 +51,7 @@
             Controller ->> EwE: request biomass (total)
             EwE -->> Controller: biomass (total)
             Controller ->> CMSY: update biomass (total)
-            Controller ->> EwE: request request catches disposition (total) 
+            Controller ->> EwE: request catches disposition (total) 
             EwE -->> Controller: catches disposition (total)
             Controller ->> CMSY: update catches disposition (total)
 
