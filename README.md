@@ -2,7 +2,8 @@
 This repo only holds issues. **NO CODE**
 
 
-[SURIMI Sequence diagram](SequenceDiagram.md)
+- [SURIMI Sequence diagram](SequenceDiagram.md)
+- [Issue type hierarchy](IssueTypeHierarchy.md)
 
 
 
