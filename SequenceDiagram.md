@@ -38,7 +38,6 @@
             Market -->> Controller: prices
             Controller ->> EwE: update prices
             Controller ->> Poseidon: update prices
-            Controller ->> ValueChain: update prices
             Controller ->> EwE: simulate timestep
             Controller ->> EwE: request biomass (intermediate)
             EwE -->> Controller: biomass (intermediate)
@@ -70,5 +69,10 @@
             Controller ->> ValueChain: simulate timestep
         end
     end
-    Controller ->> CMSY: create stock assessment (final) 
+    Controller ->> CMSY: create stock assessment (final)
+    Controller ->> EwE: Finalise
+    Controller ->> Poseidon: Finalise
+    Controller ->> CMSY: Finalise
+    Controller ->> Market: Finalise
+    Controller ->> ValueChain: Finalise
 ```
