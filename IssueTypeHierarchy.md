@@ -29,4 +29,18 @@ flowchart TD
     Deliverable4 --- D@{ shape: processes, label: "User story" }
 
 
+    %% Nieuwe blokken onder de linker User story
+    A --> A1["User story Task"]
+    A --> A2["User story Task"] 
+
 ```
+
+# Legende
+
+## User Story
+A "User Story" is a concise, informal description of a software feature from the perspective of an end user, following a common template: "As a [user type], I want to [perform an action] so that [I can achieve a goal]". It's a fundamental tool in Agile development to capture requirements, foster collaboration, and articulate the value a feature delivers. User stories are the smallest unit of work in an Agile project, are written in plain language, and serve as a prompt for conversation to clarify product requirements rather than a detailed specification. 
+The User story should not be to big. Each sprint you should be able to complete a couple of user stories. If too big, slice and dice.
+
+## User story Task
+A User story can consist of a couple of tasks. Each task is a change of code and can be (doesn't need to be) evaluated as a PR (Pull request). So to implement one User story you might need a change of the Database (User Story Task 1) and a change of the front end (User Story task 2) and a change of the API (User Story Task 3).
+
