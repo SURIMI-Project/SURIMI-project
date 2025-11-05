@@ -26,8 +26,6 @@
     Controller ->> Market: init (config)
     Controller ->> ValueChain: init (config)
 
-    Controller ->> CMSY: create stock assessment (initial)
-
     %% Simulation %%
     %% starting the simulation %%
     GUI ->> Controller: run simulation
@@ -69,7 +67,6 @@
             Controller ->> ValueChain: simulate timestep
         end
     end
-    Controller ->> CMSY: create stock assessment (final)
     Controller ->> EwE: Finalise
     Controller ->> Poseidon: Finalise
     Controller ->> CMSY: Finalise
