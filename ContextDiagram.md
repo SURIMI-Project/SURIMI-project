@@ -1,5 +1,9 @@
 # SURIMI Context Diagram
 
+The SURIMI System consists currently of 4 models. 
+- They run on the Edito infra Datalab as Docker containers.
+- Ecopath runs as a replica set of 5 containers, each running 1 simulation
+ 
 
 ```mermaid
 
@@ -13,8 +17,10 @@ flowchart TD
     Controller1["Controller"] --- Task5["CMSY++"]
 
 
-
-
 ```
-
-### Legende
+- Communication between the containers is done with GRPC
+- The Controller will run through the timesteps of each simulation
+  - It will pass all data between all models
+  - The way this is done is described in the [Sequence diagram](sequenceDiagram.md)
+- Currently the simulation is started with a simple development GUI. This will later be replaced by the MSE GUI and others
+- Input (configuration) data and output data is stored on an S3 bucket on the Edito Infra Datalab
