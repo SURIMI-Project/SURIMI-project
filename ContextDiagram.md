@@ -18,7 +18,7 @@ flowchart TD
 
 
 ```
-- Communication between the containers is done with GRPC
+- Communication between the containers is done with GRPC. A high performance HTTP/2 web API protocol
 - The Controller will run through the timesteps of each simulation
   - It will pass all data between all models
   - The way this is done is described in the [Sequence diagram](sequenceDiagram.md)
