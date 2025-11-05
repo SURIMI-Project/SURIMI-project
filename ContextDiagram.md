@@ -21,7 +21,7 @@ flowchart TD
 - Communication between the containers is done with GRPC. A high performance HTTP/2 web API protocol
 - The Controller will run through the timesteps of each simulation
   - It will pass all data between all models (biomass, catches, sales etc.)
-  - The way this is done is described in the [Sequence diagram](sequenceDiagram.md)
+  - The way this is done is described in the [Sequence diagram](SequenceDiagram.md)
 - Currently the simulation is started with a simple development GUI. This will later be replaced by the MSE GUI and others
 - Input (configuration) data and output data is stored in S3 buckets on the Edito Datalab
 - An observability system will be in place to log everything that happens on all docker containers
