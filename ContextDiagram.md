@@ -24,3 +24,4 @@ flowchart TD
   - The way this is done is described in the [Sequence diagram](sequenceDiagram.md)
 - Currently the simulation is started with a simple development GUI. This will later be replaced by the MSE GUI and others
 - Input (configuration) data and output data is stored on an S3 bucket on the Edito Infra Datalab
+- An observability system will be in place to log everything that happens on all docker containers 
