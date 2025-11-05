@@ -24,4 +24,6 @@ flowchart TD
   - The way this is done is described in the [Sequence diagram](sequenceDiagram.md)
 - Currently the simulation is started with a simple development GUI. This will later be replaced by the MSE GUI and others
 - Input (configuration) data and output data is stored on an S3 bucket on the Edito Infra Datalab
-- An observability system will be in place to log everything that happens on all docker containers 
+- An observability system will be in place to log everything that happens on all docker containers
+- Every user on the Edito infra Datalab can run their own version of the SURIMI system for development purposes
+- There is also a SURIMI project space that can hold the 'production' SURIMI system 
