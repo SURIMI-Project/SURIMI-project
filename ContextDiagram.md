@@ -1,6 +1,6 @@
 # SURIMI Context Diagram
 
-The SURIMI System consists currently of 4 models. 
+The SURIMI System consists currently of 5 models. 
 - They run on the Edito infra Datalab as Docker containers.
 - Ecopath runs as a replica set of 5 containers, each running 1 simulation
  
