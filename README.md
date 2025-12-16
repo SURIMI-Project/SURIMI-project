@@ -1,4 +1,4 @@
-# Ecopath-project
+# SURIMI-project
 Issues and documentation for all SURIMI repos
 
 Definately NO CODE here!
