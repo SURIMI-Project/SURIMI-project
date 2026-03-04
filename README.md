@@ -3,4 +3,4 @@ Issues and documentation for all SURIMI repos
 
 Definately NO CODE OR DATA here!
 
-[SURIMI Wiki page](https://github.com/Official-EwE/SURIMI-project/wiki)
+[SURIMI Wiki page](https://github.com/Official-EwE/SURIMI-project/wiki)  (same as clicking on 'Wiki' in the menu above)
