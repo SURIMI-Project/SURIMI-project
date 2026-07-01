@@ -75,7 +75,7 @@ Questions:
 - make sure that the models also cover that same spatial region (is GSA6 in all models the same)
 -->  will there be any tutorials during SEAtwins Symposium, 2026 2.-6. November 2026
 
-
+---
 
 # [SURIMI] WP3 Modellers Meeting -- 2026-06-17
 
@@ -149,7 +149,7 @@ Questions:
 - --> https://ows.emodnet-humanactivities.eu/geonetwork/srv/api/records/ff5f738f-94ee-4704-94c2-7c951c931973
 - --> have a meeting with Evelina to check about how it overlaps with the data in the DATA gui
 
-
+---
 
 # [SURIMI] WP3 Modellers Meeting -- 2026-06-03
 
@@ -244,7 +244,7 @@ Questions:
 	
 -  @Timo--> mention at next consortium meeting, and talk to @Patrycja
 
-
+---
 
 # [SURIMI] WP3 Modellers Meeting -- 2026-05-20
 
@@ -283,7 +283,7 @@ Questions:
 - the involvement of the people of EDITO / Mercator Ocean
 - the output of CMSY++ should be decided on. got an output file of CMSY with 323 columns. We should decide on what to display in the Model gui, so we can decide which of the fields should be in the StockAssesment output message
 
-
+---
 
 # [SURIMI] WP3 Modellers Meeting -- 2026-04-22
 
@@ -326,7 +326,7 @@ Questions:
 ## Other topics
 - tutorial kits
  
- 
+ ---
  
 # [SURIMI] WP3 Modellers Meeting -- 2026-04-08
 
@@ -378,7 +378,7 @@ Questions:
 	- for educational purposes we could use the Anchovy bay 
 	- preference of WP3 is to not to have the training
 
-
+---
 
 # [SURIMI] WP3 Modellers Meeting -- 2025-12-03
 
