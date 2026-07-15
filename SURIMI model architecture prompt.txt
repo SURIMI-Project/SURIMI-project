@@ -14,6 +14,8 @@ To inspect what the model does, inspect the app.py in python, or the program.cs 
 
 ## Overview
 Describe what the model does, that its part of SURIMI, that it communicates with other models over gRPC.
+Describe what language its written in, what IDE is used.
+How is the code Licenced?
 
 ## Responsibilities
 Describe what the responsabilities of the model are
@@ -65,6 +67,9 @@ List and short description of the non trivial packages that are used
 
 ## Project Structure
 Describe the directory structure in the project
+
+## Source control
+Describe what source control is used, and if there is something special to mention, like submodules, etc
 
 ## Testing
 ### Automated tests
