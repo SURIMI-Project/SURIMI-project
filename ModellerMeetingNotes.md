@@ -1,3 +1,45 @@
+# [SURIMI] WP3 Modellers Meeting -- 2026-07-15
+
+## Round table
+
+### Aristea
+
+- Sent a Miro board by email. Took Ana's transcript and wrote down all the feedback that we need to address. Added the issue type, the most relevant people, and priorities. There are 35 issues overall, so we'll need to discuss them. Will send out a Doodle for biweekly meetings.
+- Copernicus has a new call for tenders out; deadline is 23 August. Looking for proposals on "coastal demonstrators". We could do something around adapting the SURIMI framework to directly use live data from Copernicus. Proposals should not exceed 15 pages, so it should be manageable. Aristea will share the documentation.
+
+### Rikk
+
+- Has been busy making the Controller more reliable. Can now run experiments, cancel them, and restart them in a more robust way. Can configure the number of ports used directly from EDITO, making it easy to run multiple EwE instances.
+- NetCDF output files are mostly finished. They can grow quite large (up to 750 MB for simulations up to year 2050 with five parallel MSE runs).
+
+### Jeroen
+
+- Implementing changes to the market model to retrieve prices from national markets.
+- Has obtained the Aegean Sea model and is starting work on it.
+- Villy is still working on Anchovy Bay, so it may be a while before we can arrange a meeting with him.
+- Will meet with Nicolas in the coming days regarding biomass map generation for calibrating POSEIDON.
+
+### Khai
+
+- Has been doing a lot of bug fixing on the market model and setting up unit and integration tests to make this process easier in the future.
+- Has been working with Timo on price generation.
+
+### Thanasis
+
+- Gave the EwE Aegean Sea model to Jeroen; running CMSY++ for the Aegean Sea.
+- Will send out a draft of the model deliverable before the August holiday. We can use it as a template for discussing what the deliverables for the other models should look like.
+
+### Nicolas
+
+- Worked on setting things up for POSEIDON calibration, tweaking the inputs to the market model and various technical issues around the protocol.
+- Met with Miquel to discuss bottom trawler regulations
+
+## Architecture documentation
+
+Rikk wrote a detailed LLM prompt for generating technical documentation for the Controller model and suggested using the same approach for the other SURIMI models.
+
+He will go through all the repositories, try it out, and let us know so we can review whether it produced good documentation.
+
 # [SURIMI] WP3 Modellers Meeting -- 2026-07-01
 
 ## To-dos 
