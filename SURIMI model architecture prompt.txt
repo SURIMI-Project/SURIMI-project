@@ -1,0 +1,73 @@
+Create or update a markup file with the documentation of this model / service
+And create mermaid diagrams
+
+The name of the markup file will be [repo name, without "SURIMI-"]_architecture.md, and it is located in the root of the project, at the same level as the README.md
+
+
+Follow the document structure below. Other models will be described in the same structure.
+
+Remember that all models only communicate with the SURIMI controller.
+
+To inspect what the model does, inspect the app.py in python, or the program.cs in C# systems.
+
+# [repo Name] — Architecture
+
+## Overview
+Describe what the model does, that its part of SURIMI, that it communicates with other models over gRPC.
+
+## Responsibilities
+Describe what the responsabilities of the model are
+
+## Interfaces
+distinguish between Lifecycle messages (first) and the rest 
+  - client gRPC messages  one line description
+  - server gRPC messages one line description
+
+## Model theory
+Describe the theorectical concepts that are used in the model
+For example MSE in the output-creator
+
+
+## Service architecture
+
+### High-Level Architecture
+Describe the high level architecture, possibly using a (Mermaid flowchart).
+For example, explain the Two phase design of the output-creator
+
+### Message flow (Mermaid sequence diagram)
+
+### Key design decisions / trade-offs
+
+## Error handling
+Describe what happens when an exception occurs
+
+## Logging
+Describe how logging is configured
+
+## S3 bucket
+Describe what files are used from the EDITO S3 bucket.
+
+### S3 bucket authentication
+Describe high level how the authentication with the S3 bucket is performed.
+Especially that the (long living) credentials themselfes are retrieved from the vault.
+
+## Kubernetes
+Tell something about that this service will be hosted in Kubernetes cluster of the EDITO Datalab
+
+## Environment
+List the Env vars and describe what they are used for
+
+## CI/CD
+Describe what is done in the Github actions.
+Describe what docker images are created and where they are pushed to.
+
+## Technology stack (table: package | role)
+List and short description of the non trivial packages that are used
+
+## Project Structure
+Describe the directory structure in the project
+
+## Testing
+### Automated tests
+### Manual testing with Postman
+
