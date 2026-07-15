@@ -25,16 +25,15 @@ distinguish between Lifecycle messages (first) and the rest
 
 ## Model theory
 Describe the theorectical concepts that are used in the model
-For example MSE in the output-creator
 
 
 ## Service architecture
 
 ### High-Level Architecture
 Describe the high level architecture, possibly using a (Mermaid flowchart).
-For example, explain the Two phase design of the output-creator
 
-### Message flow (Mermaid sequence diagram)
+### Message flow 
+Create a Mermaid sequence diagram
 
 ### Key design decisions / trade-offs
 
