@@ -11,18 +11,6 @@ token = os.environ["SURIMI_SYNC_ARCH_DOCS_TOKEN"]
 
 g = Github(token)
 
-
-print("get all repo names")
-org = g.get_organization("Official-EwE")
-
-for repo in org.get_repos():
-    print(repo.full_name)
-
-print("printed all repo names")
-
-repos = list(org.get_repos())
-print(f"Visible repos: {len(repos)}")
-
 wiki_dir = Path("wiki")
 
 subprocess.run(
