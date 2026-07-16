@@ -11,6 +11,14 @@ token = os.environ["GITHUB_TOKEN"]
 
 g = Github(token)
 
+
+
+org = g.get_organization("Official-EwE")
+
+for repo in org.get_repos():
+    print(repo.full_name)
+
+
 wiki_dir = Path("wiki")
 
 subprocess.run(
