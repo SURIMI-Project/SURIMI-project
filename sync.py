@@ -23,6 +23,7 @@ subprocess.run(
     check=True,
 )
 
+# search will not immediately show the correct results. It will take maybe 15 minutes before new documents show up.
 results = g.search_code(
     query=f"org:{ORG} filename:_architecture.md"
 )
