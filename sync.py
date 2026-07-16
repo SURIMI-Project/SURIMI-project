@@ -20,6 +20,9 @@ for repo in org.get_repos():
 
 print("printed all repo names")
 
+repos = list(org.get_repos())
+print(f"Visible repos: {len(repos)}")
+
 wiki_dir = Path("wiki")
 
 subprocess.run(
