@@ -7,7 +7,7 @@ import os
 ORG = "Official-EwE"
 WIKI_REPO = "SURIMI-project"
 
-token = os.environ["GITHUB_TOKEN"]
+token = os.environ["SURIMI_SYNC_ARCH_DOCS_TOKEN"]
 
 g = Github(token)
 
