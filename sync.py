@@ -12,7 +12,7 @@ token = os.environ["GITHUB_TOKEN"]
 g = Github(token)
 
 
-
+print("get all repo names")
 org = g.get_organization("Official-EwE")
 
 for repo in org.get_repos():
