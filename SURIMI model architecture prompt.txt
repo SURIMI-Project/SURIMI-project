@@ -15,7 +15,12 @@ To inspect what the model does, inspect the app.py in python, or the program.cs 
 ## Overview
 Describe what the model does, that its part of SURIMI, that it communicates with other models over gRPC.
 Describe what language its written in, what IDE is used.
+
+### Licence
 How is the code Licenced?
+
+### Build outputs
+List the binaries that are build in this workspace, and describe what they do
 
 ## Responsibilities
 Describe what the responsabilities of the model are
