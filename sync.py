@@ -18,6 +18,7 @@ org = g.get_organization("Official-EwE")
 for repo in org.get_repos():
     print(repo.full_name)
 
+print("printed all repo names")
 
 wiki_dir = Path("wiki")
 
