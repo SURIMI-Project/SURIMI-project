@@ -5,7 +5,7 @@ The name of the markup file will be [repo name, without "SURIMI-"]_architecture.
 
 Follow the document structure below. Other models will be described in the same structure.
 
-If the [repo name, without "SURIMI-"]_architecture.md is allready present, update what has changed. Don't delete text or graphs without confirmation.
+If the [repo name, without "SURIMI-"]_architecture.md is allready present, read it, and update what has changed. Don't delete text or graphs without confirmation.
 
 Remember that all models only communicate with the SURIMI controller.
 
