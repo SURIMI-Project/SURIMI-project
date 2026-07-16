@@ -35,6 +35,7 @@ Describe the theorectical concepts that are used in the model
 
 
 ## Service architecture
+Describe the architecture of the model in 5 sentences
 
 ### High-Level Architecture
 Describe the high level architecture, possibly using a (Mermaid flowchart).
