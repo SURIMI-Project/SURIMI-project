@@ -3,8 +3,9 @@ And create mermaid diagrams
 
 The name of the markup file will be [repo name, without "SURIMI-"]_architecture.md, and it is located in the root of the project, at the same level as the README.md
 
-
 Follow the document structure below. Other models will be described in the same structure.
+
+If the [repo name, without "SURIMI-"]_architecture.md is allready present, update what has changed. Don't delete text or graphs without confirmation.
 
 Remember that all models only communicate with the SURIMI controller.
 
