@@ -1,3 +1,53 @@
+# [SURIMI] WP3 Modellers Meeting -- 2026-09-09
+
+## Action points for today
+
+1. Model GUI: discussion on stakeholder workshop feedback
+- Aristea needs feedback from all the Modellers
+- Aristea is sending around an event 
+
+2. The templates for deliverables
+- Auth has an additional script for the functional groups
+
+3. LLM surveys - Hasan
+please go aheadplea
+- tries to send it to individual persons to increase response rate\
+- 
+
+4. Social Simulation Coference 2026
+
+## Team updates
+
+### EII
+
+- MSE calculations are running in EDITO,  
+- experiments with up to 5 simulations can run simulataiously
+- change in SURIMI protocol --> to add climate scenarios, this can also be used to 
+- Rik is joining the EwE course at the end of October, together with Jeroen and Nic
+
+- Patrycja and Rik are trying to arrange some meetings with the DAtalab people, but so far without sufficient results. We can continue without their help.
+- HAsan can now book more gpu time, the processes are now not ended after 3 hours. --> Now he can run models for multiple weeks.
+- 
+
+### KONNECTA
+- 
+
+### NORCE
+- 
+
+### AUTH
+- 
+
+### UOXF
+
+- 
+
+## To-dos
+
+- [ ] Meeting with Villy for Anchovy Bay ()
+
+---
+
 # [SURIMI] WP3 Modellers Meeting -- 2026-07-15
 
 ## Round table
