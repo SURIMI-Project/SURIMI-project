@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="560" viewBox="0 0 960 560" role="img" aria-label="The ready to use wiring on EDITO: the chat interface calls the language model and both SURIMI servers over MCP; any other MCP client attaches to the data server at /sse.">
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="560" viewBox="0 0 960 560" role="img" aria-label="The ready to use wiring on EDITO: the chat interface calls the language model and both SURIMI servers over MCP; any other MCP client attaches to the data server at /mcp.">
   <title>The ready to use wiring on EDITO</title>
   <defs>
     <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
@@ -18,7 +18,7 @@
     <rect x="64" y="80" width="360" height="116" rx="8" fill="#FFFFFF" stroke="#AEBBC7" stroke-width="1.25"/>
     <text x="84" y="108" font-size="16" font-weight="700">SURIMI-vllm-ui</text>
     <text x="84" y="130" font-size="13" fill="#5B6B7A">Chat interface</text>
-    <text x="84" y="156" font-size="12" fill="#3D4A57">open-webui 0.11.1 · chart 0.2.79</text>
+    <text x="84" y="156" font-size="12" fill="#3D4A57">open-webui 0.11.1 · chart 0.2.94</text>
     <text x="84" y="178" font-size="12" fill="#3D4A57">SURIMI assistant, system prompt, both servers</text>
 
     <!-- Language model -->
@@ -44,7 +44,7 @@
     <rect x="362" y="290" width="46" height="22" rx="11" fill="#1F6FB2"/>
     <text x="385" y="305" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">D3.7</text>
     <text x="84" y="326" font-size="13" fill="#5B6B7A">NLP assessment model</text>
-    <text x="84" y="352" font-size="12" fill="#3D4A57">image 1.2.42 · endpoint /sse</text>
+    <text x="84" y="352" font-size="12" fill="#3D4A57">image 1.2.53 · endpoint /mcp</text>
     <text x="84" y="374" font-size="12" fill="#3D4A57">tabular data lake</text>
 
     <!-- Model server, D3.9 -->
@@ -53,7 +53,7 @@
     <rect x="834" y="290" width="46" height="22" rx="11" fill="#1F6FB2"/>
     <text x="857" y="305" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">D3.9</text>
     <text x="556" y="326" font-size="13" fill="#5B6B7A">NLP policy model</text>
-    <text x="556" y="352" font-size="12" fill="#3D4A57">image 1.2.11 · endpoint /mcp</text>
+    <text x="556" y="352" font-size="12" fill="#3D4A57">image 1.2.12 · endpoint /mcp</text>
     <text x="556" y="374" font-size="12" fill="#3D4A57">simulation runs and gridded forcing</text>
 
     <!-- Any other MCP client, outside EDITO -->
@@ -62,6 +62,6 @@
     <text x="84" y="502" font-size="12" fill="#3D4A57">Claude.ai, Claude Desktop, ChatGPT connector,</text>
     <text x="84" y="520" font-size="12" fill="#3D4A57">Mistral Chat, opencode</text>
     <line x1="244" y1="452" x2="244" y2="394" stroke="#44515E" stroke-width="1.5" marker-end="url(#arrow)"/>
-    <text x="256" y="438" font-size="12" fill="#44515E">attach to /sse</text>
+    <text x="256" y="438" font-size="12" fill="#44515E">attach to /mcp</text>
   </g>
 </svg>
