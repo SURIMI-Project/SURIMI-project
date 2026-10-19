@@ -10,6 +10,9 @@ jobs:
   sync:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write
+
     steps:
       - uses: actions/checkout@v4
 
@@ -22,4 +25,5 @@ jobs:
       - name: Sync wiki
         env:
           SURIMI_SYNC_ARCH_DOCS_TOKEN: ${{ secrets.SURIMI_SYNC_ARCH_DOCS_TOKEN }}
+          WIKI_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python sync.py
