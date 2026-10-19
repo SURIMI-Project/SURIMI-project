@@ -8,6 +8,8 @@ ORG = "SURIMI-project"
 WIKI_REPO = "SURIMI-project"
 
 token = os.environ["SURIMI_SYNC_ARCH_DOCS_TOKEN"]
+# The search token may lack wiki write access; prefer the workflow token for the wiki clone/push.
+wiki_token = os.environ.get("WIKI_TOKEN") or token
 
 g = Github(token)
 
@@ -17,7 +19,7 @@ subprocess.run(
     [
         "git",
         "clone",
-        f"https://x-access-token:{token}@github.com/{ORG}/{WIKI_REPO}.wiki.git",
+        f"https://x-access-token:{wiki_token}@github.com/{ORG}/{WIKI_REPO}.wiki.git",
         str(wiki_dir),
     ],
     check=True,
