@@ -4,7 +4,7 @@ import subprocess
 import shutil
 import os
 
-ORG = "Official-EwE"
+ORG = "SURIMI-project"
 WIKI_REPO = "SURIMI-project"
 
 token = os.environ["SURIMI_SYNC_ARCH_DOCS_TOKEN"]
