@@ -19,7 +19,11 @@
 ### STORAGE Problem
 - Edito currently provides us 50 GB storage, one NetCDF is about 400 MB. 
 - Ideas: Limit the output to specific user requests? 
-- Discussion  in Copenhagen 
+- Discussion  in Copenhagen
+
+
+### AWGEAN case
+- MICE uses functional groups instead of species (how to communicate in grpc?)
 
 
 # [SURIMI] WP3 Modellers Meeting -- 2026-10-06
