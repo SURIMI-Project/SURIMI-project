@@ -1,6 +1,163 @@
+# [SURIMI] WP3 Modellers Meeting -- 2026-10-06
+
+## Action points
+
+### Status Deliverables
+| ID | Model | Owner | Status Model | Status Report | Status Review |
+|---|---|---|---|---|---|
+| D3.1 | System dynamics model | NORCE | ready | ready | send to Jeroen |
+| D3.2 | Product flow value-chain model | EII | not ready| not ready| |
+| D3.3 | Agent-based model | OXF | ready | ready | review Timo and Jeroen|
+| D3.4 | MICE ecosystem model | AUTH | | | |
+| D3.5 | EwE model | EII | | | |
+| D3.6 | CMSY++ assessment model | AUTH | | | |
+| D3.7 | NLP assessment model | NORCE | ready | ready | Oender reviewed, review Timo this week |
+| D3.8 | MSE policy model | OXF/EII | | | review Nic, add a sentence why it's not R |
+| D3.9 | NLP policy model | NORCE | ready | ready | Oender reviewed, review Timo week|
+
+
+### STORAGE Problem
+- Edito currently provides us 50 GB storage, one NetCDF is about 400 MB. 
+- Ideas: Limit the output to specific user requests? 
+- Discussion  in Copenhagen 
+- 
+
+
+
+## Team updates
+
+### EII
+
+- SURIMI project on EDITO has increased memory now, 2 MSE runs (witth each 5 simulatitons) can run at the same time now.
+- New messages about value chain model outputs will be generated.
+
+### NORCE
+
+- North-western Mediterranean finished on Thursday.
+- LLM deliverables are almost finished. Review Meeting on Monday.
+
+### AUTH
+
+- Deliverables are updated.
+
+### UOXF
+
+- Working on deliverables and documentation, fixing bugs related to that.
+
+
+
+# [SURIMI] WP3 Modellers Meeting -- 2026-10-06
+
+## Action points
+
+- LICENSES DISCUSSION:
+
+  - Our aim is to use a permissive license such as Apache 2.0 which commits the code to be open and available while at the same time allowing other interested users to extend it for both open and commercial purposes.
+  - What license should the input data use?
+    --> Question to the commissioner: e.g. What to do with the combined data used in POSEIDON.
+
+- Repository SURIMI Project
+
+  - We could have organization level websites hosted on GitHub (for models and project wiki)
+  - Also create an organizational level README.md to create a roadmap for the project.
+  - Add to website a link to the repo
+
+## Team updates
+
+### EII
+
+- SURIMI project on EDITO has increased memory now, 2 MSE runs (witth each 5 simulatitons) can run at the same time now.
+- New messages about value chain model outputs will be generated.
+
+### NORCE
+
+- North-western Mediterranean finished on Thursday.
+- LLM deliverables are almost finished. Review Meeting on Monday.
+
+### AUTH
+
+- Deliverables are updated.
+
+### UOXF
+
+- Working on deliverables and documentation, fixing bugs related to that.
+
+
+# [SURIMI] WP3 Modellers Meeting -- 2026-09-23
+
+## Action points
+
+### The talk Patrycja and RIK had with the EDITO team.
+- Edito will upgrade of the Kubernetes cluster.
+	- Can then provide observability as a service (Metrics, Logging and Tracing)
+	- Authentication as a service 
+	- Better support for gRPC
+	- Available resources to run many MSE simulations
+- We get more resources (cpu, memory)
+- We investigate how we can optimize the use of Kubernetes
+- New EDITO Viewer
+- There is no more development on the general EDITO Viewers, so we won’t be using them in SURIMI
+	- New S3 bucket (move away from Minio)
+- I will investigate and report
+--> The minutes of this meeting can be found on SharePoint (WP4/EDITO)
+
+### The deliverable template we discussed with Nicolas.
+--> List of deliverables: https://github.com/Official-EwE/SURIMI-project/tree/main/deliverables
+- Template proposal with:
+	- Sequence diagram with only the model interactions
+	- Configuration (list of files, necessary to run the model)
+	- Input messages
+	- Output messages
+- Write them in markup. When everything is done, NORCE will convert them to the Word template. (Except CMSY++, which is already a Word document)
+
+- --> Date for Review: Drafts need to be ready be fore the 23.10.
+- --> 5-10 pages
+- --> Additional information can live in the Github repository
+- 
+
+
+- The mice model is not really a separate model. In the deliverable we will describe that we have created 3 scenarios (northwestern_med, aegean_sea and anchovy_bay) for which we created configuration files. 
+- The Aegean sea model configuration files (EwE database etc.)
+
+
+
+- Problem: Mice model parametrisation cannot be shared.
+	- Attange chat with Patrycja about that! Do we need a discussion with EU officer?
+	
+- Should we leave the project on the EwE repo or the SURIMI projec
+	- we will test it with poseidon and LLM
+	- Timo invites all members
+	
+
+## Team updates
+
+### EII
+- Agean model Team meeting will be arranged by Jeroen, he reaches out to Thanassis. 
+
+### KONNECTA
+- ss 
+
+### NORCE
+- NET CDF update will be updated by RIK
+- 
+
+### AUTH
+- 
+
+### UOXF
+
+- 
+
+## To-dos
+
+- [ ] Meeting with Villy for Anchovy Bay ()
+
+---
+
+
 # [SURIMI] WP3 Modellers Meeting -- 2026-09-09
 
-## Action points for today
+## Action points
 
 1. Model GUI: discussion on stakeholder workshop feedback
 - Aristea needs feedback from all the Modellers
