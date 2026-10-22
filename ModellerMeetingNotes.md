@@ -20,30 +20,6 @@
 - Edito currently provides us 50 GB storage, one NetCDF is about 400 MB. 
 - Ideas: Limit the output to specific user requests? 
 - Discussion  in Copenhagen 
-- 
-
-
-
-## Team updates
-
-### EII
-
-- SURIMI project on EDITO has increased memory now, 2 MSE runs (witth each 5 simulatitons) can run at the same time now.
-- New messages about value chain model outputs will be generated.
-
-### NORCE
-
-- North-western Mediterranean finished on Thursday.
-- LLM deliverables are almost finished. Review Meeting on Monday.
-
-### AUTH
-
-- Deliverables are updated.
-
-### UOXF
-
-- Working on deliverables and documentation, fixing bugs related to that.
-
 
 
 # [SURIMI] WP3 Modellers Meeting -- 2026-10-06
